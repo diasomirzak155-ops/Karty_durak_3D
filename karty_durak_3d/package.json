@@ -1,0 +1,18 @@
+{
+  "name": "karty-durak-online-3d",
+  "version": "4.3.0",
+  "private": true,
+  "description": "Карты Дурак Онлайн — 3D клуб с контекстным управлением и локальными игровыми ресурсами",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --input-type=module --check < public/game.js && node scripts/smoke-check.cjs"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
